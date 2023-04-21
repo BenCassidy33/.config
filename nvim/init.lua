@@ -1,7 +1,6 @@
 
 vim.g.mapleader = " "
 
-
 vim.keymap.set("n", "<leader>rw", vim.cmd.Ex)
 vim.api.nvim_set_keymap('i', 'jj', '<ESC>', { noremap = true})
 
@@ -9,6 +8,7 @@ vim.keymap.set('n', '<leader>nf', vim.cmd.NvimTreeFocus, { noremap = true })
 vim.keymap.set('n', '<leader>nc', vim.cmd.NvimTreeCollapse, { noremap = true })
 vim.keymap.set('n', '<leader>nt', vim.cmd.NvimTreeToggle, { noremap = true })
 vim.keymap.set('n', '<leader>ns', vim.cmd.NvimTreeFindFile, { noremap = true })
+--vim.keymap.set("n", "<Leader>a", vim.cmd.copilot#Accept, {silent = true})
 
 vim.keymap.set("n", "<leader>zm", vim.cmd.ZenMode)
 
@@ -18,8 +18,8 @@ vim.opt.guicursor = ""
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.tabstop = 2
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.swapfile = false
@@ -53,17 +53,22 @@ vim.cmd("let g:netrw_banner = 0")
 
 function Colors(color)
     -- current colors are "gruvbox" or "rose-pine"
+    color = color or "rose-pine"
     require('lualine').setup {
         options = {theme = 'rose-pine'}
     }
 
     require('rose-pine').setup({
-        variant = 'auto',
-        dark_variant = 'main',
+        variant = 'main',
+        dark_variant = 'moon',
         disable_background = true,
         bold_vert_split = true,
         disable_float_background = true,
         disable_italics = true,
+
+        groups = {
+          punctuation = 'text';
+        };
 
         highlight_groups = {
             TelescopeBorder = { fg = "highlight_high", bg = "none" },
@@ -78,7 +83,6 @@ function Colors(color)
         }
 	})
 
-    color = color or "rose-pine"
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", {bg = "none"})

@@ -19,10 +19,12 @@ return require('packer').startup(function(use)
       end
   }
 
+--Copilot
+use 'github/copilot.vim'
 
 
-  -- Lua
 
+use 'folke/tokyonight.nvim'
 use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
 
