@@ -1,0 +1,16 @@
+*
+!*/
+
+!nvim/**
+!wofi/**
+!yazi/**
+!nwg-look/**
+!nwg-panel/**
+!nwgcc/**
+!nwg-drawer/**
+!custom-wofi/**
+!kitty/**
+!neofetch/**
+!waybar/**
+!tmux/**
+!.gitignore

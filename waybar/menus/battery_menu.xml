@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+<object class="GtkMenu" id="menu">
+
+<child class="GtkMenuItem" id="battery-state">
+<property name="battery-charging-state">{capacity}</property>
+        <property name="battery-precentage"></property>
+    </child>
+
+</object>
+</interface>
