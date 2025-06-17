@@ -1,0 +1,7 @@
+;; apps
+
+(defwidget apps []
+    (box :class "dockbox"
+        (box :orientation "h" :spacing 15 :valign "center" :halign "center" :space-evenly "false" :vexpand "false" :hexpand "false"
+        (button :style "background-image: url('icons/firefox.png');" :class "appicon" :onclick "firefox")
+    )))

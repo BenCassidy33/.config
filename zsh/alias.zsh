@@ -1,0 +1,12 @@
+alias ls="eza -G --color --icons -a"
+alias wallpaper="pkill hyprpaper || hyprpaper &"
+alias cd="z"
+alias p="paru -S"
+
+alias gc="git clone --depth=1"
+alias gcd="git clone"
+alias gac="git add . && git commit -m $1"
+alias gacm="git add . && git commit --allow-empty-message"
+alias gacp="git add . && git commit -m $1 && git push"
+alias gacmp="git add . && git commit --allow-empty-message \"\" && git push"
+alias gpcu="git add . && git commit -m \"config updated $(date)\" && git push"
