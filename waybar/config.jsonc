@@ -5,8 +5,8 @@
     "height": 20,
 
     "modules-left": [
-        "hyprland/workspaces",
-        "wlr/taskbar"
+        "hyprland/workspaces"
+        // "wlr/taskbar"
     ],
 
     "modules-center": [],
@@ -28,7 +28,6 @@
 
     "wlr/taskbar": {
         "format": "{icon} {title:.17}",
-        // "icon-size": 28,
         "spacing": 3,
         "on-click-middle": "close",
         "tooltip-format": "{title}",

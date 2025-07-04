@@ -8,6 +8,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="robbyrussell"
 
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
@@ -60,3 +61,5 @@ bindkey '^I' fzf_completion
 zstyle ':completion:*' fzf-search-display true
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f "/home/benc/.ghcup/env" ] && . "/home/benc/.ghcup/env" # ghcup-env

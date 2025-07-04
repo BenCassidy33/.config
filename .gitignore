@@ -15,6 +15,9 @@
 !/rofi
 !/rofi/**
 
+!/rofi.benc
+!/rofi.benc/**
+
 !/tmux
 !/tmux/**
 
@@ -32,3 +35,4 @@
 
 !/eww
 !/eww/**
+

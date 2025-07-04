@@ -94,8 +94,8 @@ tooltip label {
 #taskbar button {
   min-width: 130px;
   border-bottom: 3px solid rgba(255, 255, 255, 0.3);
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-left: 4px;
+  margin-right: 4px;
   padding-left: 8px;
   padding-right: 8px;
   color: white;
@@ -139,21 +139,31 @@ tooltip label {
 }
 
 #tray {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
+
+#tray > * {
+  margin-left: 8px;
+}
+
 #tray > .passive {
   border-bottom: none;
 }
+
 #tray > .active {
   border-bottom: 3px solid white;
 }
+
 #tray > .needs-attention {
   border-bottom: 3px solid @warning_color;
 }
+
 #tray > widget {
   transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  padding-left: 8px;
 }
+
 #tray > widget:hover {
   background: @bg_hover;
 }
@@ -169,8 +179,8 @@ tooltip label {
 }
 
 #network {
-  padding-left: 3px;
-  padding-right: 3px;
+  padding-left: 4px;
+  padding-right: 8px;
 }
 
 #language {
