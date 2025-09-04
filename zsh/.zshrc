@@ -1,5 +1,6 @@
 # gets read 2nd, use for actually setting up zsh
 export PATH=~/.local/bin/:$PATH
+export PATH=~/.cargo/bin/:$PATH
 
 eval "$(zoxide init zsh)"
 
