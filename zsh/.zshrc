@@ -29,7 +29,7 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 
-zinit light zsh-users/zsh-syntax-highlighting
+# zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 
@@ -64,3 +64,10 @@ zstyle ':completion:*' fzf-search-display true
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [ -f "/home/benc/.ghcup/env" ] && . "/home/benc/.ghcup/env" # ghcup-env
+
+# bun completions
+[ -s "/home/benc/.bun/_bun" ] && source "/home/benc/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
