@@ -14,7 +14,7 @@ if [ "$STATUS" = "1" ]; then
     hyprctl keyword decoration:rouding 0 
     hyprctl keyword general:border_size 0
 
-    pkill waybar
+    # pkill waybar
 else
     hyprctl keyword animations:enabled 1
     hyprctl keyword general:gaps_in "$GAPS_IN"
@@ -22,5 +22,5 @@ else
     hyprctl keyword decoration:rounding "$ROUNDING"
     hyprctl keyword general:border_size "$BORDER_SIZE"
 
-    hyprctl dispatch exec waybar
+    # hyprctl dispatch exec waybar
 fi

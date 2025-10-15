@@ -2,7 +2,7 @@
     "layer": "bottom",
     "position": "bottom",
     "mod": "dock",
-    "height": 20,
+    "height": 27,
 
     "modules-left": [
         "hyprland/workspaces",
@@ -11,12 +11,20 @@
     "modules-center": [],
 
     "modules-right": [
-        "tray",
         "pulseaudio",
+        "custom/sep",
         "network",
+        "custom/sep",
         "battery",
+        "custom/sep",
         "clock"
     ],
+
+
+    "custom/sep": {
+        "format": " | "
+    },
+
 
     "hyprland/workspaces": {
         "icon-size": 32,
@@ -33,8 +41,9 @@
         "ignore-list": [],
         "on-click": "activate"
     },
-       "clock": {
-        "format": "      {:%H:%M\n%m/%d/%Y}",
+
+    "clock": {
+        "format": "{:%H:%M  %a %m-%d-%Y}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "year",
@@ -50,18 +59,11 @@
                 "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
             }
         },
-        "actions": {
-            "on-click-right": "mode",
-            "on-click-forward": "tz_up",
-            "on-click-backward": "tz_down",
-            "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
-        }
     },
 
     "network": {
-        "format-wifi": " {icon}",
-        "format-ethernet": "  ",
+        "format-wifi": "{icon}   {essid}",
+        "format-ethernet": "",
         "format-disconnected": "󰌙",
         "format-icons": [
             "󰤯 ",
@@ -71,13 +73,14 @@
             "󰤨 "
         ]
     },
+
     "battery": {
         "states": {
             "good": 95,
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon} {capacity}%",
+        "format": " {capacity}%  {icon}  {time} ",
         "format-charging": "  {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-alt": "{time} {icon}",
@@ -99,9 +102,9 @@
     "pulseaudio": {
         "max-volume": 150,
         "scroll-step": 10,
-        "format": "{icon}",
+        "format": "{volume}% {icon}",
         "tooltip-format": "{volume}%",
-        "format-muted": "",
+        "format-muted": "{volume}%   muted",
         "format-icons": {
             "default": [
                 "",
