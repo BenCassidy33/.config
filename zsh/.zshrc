@@ -71,3 +71,9 @@ zstyle ':completion:*' fzf-search-display true
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/benc/.dart-cli-completion/zsh-config.zsh ]] && . /home/benc/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+

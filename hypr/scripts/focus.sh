@@ -2,7 +2,8 @@
 
 STATUS=$(hyprctl getoption animations:enabled | grep "int: " | awk '{print $2}')
 
-ROUNDING=8
+# ROUNDING=8
+ROUNDING=0
 BORDER_SIZE=2
 GAPS_IN=6
 GAPS_OUT=6
