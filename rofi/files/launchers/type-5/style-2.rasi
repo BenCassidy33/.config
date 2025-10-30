@@ -41,7 +41,8 @@ window {
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border-radius:               12px;
+    // border-radius:               12px;
+    border-radius:               0px;
     border:                      2px solid;
     border-color:                gray/20%;
     cursor:                      "default";
@@ -55,7 +56,8 @@ mainbox {
     spacing:                     0px;
     margin:                      0px;
     padding:                     20px;
-    border-radius:               12px;
+    // border-radius:               12px;
+    border-radius:               0px;
     background-color:            rgba(15, 15, 15, 0.85);
     children:                    [ "inputbar", "listview" ];
 }
