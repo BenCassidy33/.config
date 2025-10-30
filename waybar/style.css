@@ -2,7 +2,7 @@
 
 @define-color foreground rgba(255, 255, 255, 1);
 @define-color background rgba(10, 10, 10, .0);
-@define-color bg_main rgba(10, 10, 10, .7);
+@define-color bg_main rgba(10, 10, 10, .9);
 
 @define-color content_main white;
 @define-color content_inactive rgba(255, 255, 255, 0.25);
